@@ -2,12 +2,12 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: '#1f2421',
+        background: '#1a1e1b',
         borderTop: '1px solid rgba(255,255,255,0.08)',
       }}
     >
       <div
-        className="mx-auto flex flex-col items-center justify-between gap-4 px-6 py-10 sm:flex-row lg:px-12"
+        className="mx-auto flex flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row lg:px-12"
         style={{ maxWidth: 1200 }}
       >
         <span
@@ -21,22 +21,8 @@ export default function Footer() {
           className="font-body text-[13px] font-normal"
           style={{ color: 'rgba(255,255,255,0.4)' }}
         >
-          &copy; 2025 Szum i Sosna. Wszelkie prawa zastrzeżone.
+          &copy; {new Date().getFullYear()} Szum i Sosna. Wszelkie prawa zastrzeżone.
         </span>
-
-        <a
-          href="#"
-          className="font-body text-[13px] font-normal transition-colors duration-200"
-          style={{ color: 'rgba(255,255,255,0.4)' }}
-          onMouseEnter={(e) => {
-            (e.target as HTMLAnchorElement).style.color = '#ffffff';
-          }}
-          onMouseLeave={(e) => {
-            (e.target as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.4)';
-          }}
-        >
-          Polityka prywatności
-        </a>
       </div>
     </footer>
   );
