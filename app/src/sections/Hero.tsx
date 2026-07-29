@@ -88,7 +88,7 @@ export default function Hero({ lenisRef }: HeroProps) {
     <section
       id="hero"
       className="relative w-full overflow-hidden"
-      style={{ height: '100vh', minHeight: 600 }}
+      style={{ height: '100svh', minHeight: 520 }}
     >
       {/* WebGL Ocean Background */}
       <OceanCanvas />
@@ -107,10 +107,10 @@ export default function Hero({ lenisRef }: HeroProps) {
         className="absolute inset-0 z-[2] flex flex-col items-center justify-center px-6"
         style={{ paddingTop: '0' }}
       >
-        <div className="text-center" style={{ marginTop: '-8vh' }}>
+        <div className="text-center" style={{ marginTop: '-4vh' }}>
           <span
             ref={labelRef}
-            className="mb-5 inline-block font-body text-[12px] font-medium uppercase opacity-0"
+            className="mb-4 inline-block font-body text-[11px] sm:text-[12px] font-medium uppercase opacity-0"
             style={{
               color: 'rgba(255,255,255,0.75)',
               letterSpacing: '0.15em',
@@ -127,7 +127,7 @@ export default function Hero({ lenisRef }: HeroProps) {
               style={{
                 color: '#ffffff',
                 textShadow: '0 2px 30px rgba(0,0,0,0.25)',
-                fontSize: 'clamp(48px, 8vw, 96px)',
+                fontSize: 'clamp(38px, 8vw, 96px)',
                 transform: 'translateY(30px)',
               }}
             >
@@ -139,7 +139,7 @@ export default function Hero({ lenisRef }: HeroProps) {
               style={{
                 color: '#ffffff',
                 textShadow: '0 2px 30px rgba(0,0,0,0.25)',
-                fontSize: 'clamp(48px, 8vw, 96px)',
+                fontSize: 'clamp(38px, 8vw, 96px)',
                 transform: 'translateY(30px)',
               }}
             >
@@ -149,10 +149,10 @@ export default function Hero({ lenisRef }: HeroProps) {
 
           <p
             ref={subtitleRef}
-            className="mx-auto mt-7 font-body font-normal opacity-0"
+            className="mx-auto mt-5 sm:mt-7 font-body font-normal opacity-0"
             style={{
               color: 'rgba(255,255,255,0.88)',
-              fontSize: 18,
+              fontSize: 'clamp(14px, 2vw, 18px)',
               lineHeight: 1.6,
               maxWidth: 520,
               textShadow: '0 1px 12px rgba(0,0,0,0.2)',
@@ -165,11 +165,11 @@ export default function Hero({ lenisRef }: HeroProps) {
           <button
             ref={ctaRef}
             onClick={scrollToContact}
-            className="mt-9 font-body text-[14px] font-medium opacity-0 transition-all duration-300 hover:translate-y-[-1px]"
+            className="mt-7 sm:mt-9 font-body text-[13px] sm:text-[14px] font-medium opacity-0 transition-all duration-300 hover:translate-y-[-1px]"
             style={{
               background: '#ffffff',
               color: '#1f2421',
-              padding: '14px 36px',
+              padding: '12px 32px',
               borderRadius: 28,
               letterSpacing: '0.03em',
               transform: 'translateY(15px)',
@@ -189,15 +189,23 @@ export default function Hero({ lenisRef }: HeroProps) {
       {/* Scroll indicator chevron */}
       <div
         ref={chevronRef}
-        className="absolute bottom-8 left-1/2 z-[2] opacity-0"
-        style={{ transform: 'translateX(-50%)' }}
+        className="absolute left-1/2 z-[2] opacity-0 cursor-pointer"
+        style={{
+          bottom: 'clamp(20px, 4vh, 36px)',
+          transform: 'translateX(-50%)',
+        }}
+        onClick={() => {
+          if (lenisRef.current) {
+            lenisRef.current.scrollTo('#apartament', { offset: -72 });
+          }
+        }}
       >
         <svg
           width="24"
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="rgba(255,255,255,0.6)"
+          stroke="rgba(255,255,255,0.75)"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
