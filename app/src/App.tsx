@@ -44,7 +44,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-full max-w-full overflow-x-hidden">
       <Navigation lenisRef={lenisRef} />
       <Hero lenisRef={lenisRef} />
       <About />

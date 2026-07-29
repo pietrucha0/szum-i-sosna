@@ -245,7 +245,7 @@ export default function Gallery({ lenisRef }: GalleryProps) {
     if (offset < -total / 2) offset += total;
 
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
-    const spacing = isMobile ? 65 : 72; // percentage spacing
+    const spacing = isMobile ? 50 : 72; // percentage spacing
 
     if (offset === 0) {
       return {
