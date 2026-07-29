@@ -162,10 +162,12 @@ export default function Hero({ lenisRef }: HeroProps) {
             Nowoczesny apartament położony zaledwie 100 metrów od plaży to idealne miejsce na wypoczynek! Z okien rozpościera się widok na sosnowy las.
           </p>
 
-          <button
-            ref={ctaRef}
-            onClick={scrollToContact}
-            className="mt-7 sm:mt-9 font-body text-[13px] sm:text-[14px] font-medium opacity-0 transition-all duration-300 hover:translate-y-[-1px]"
+          <a
+            ref={ctaRef as any}
+            href="https://client24006.idobooking.com/book-now/index.php?ob[77]"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-7 sm:mt-9 inline-block font-body text-[13px] sm:text-[14px] font-medium opacity-0 transition-all duration-300 hover:translate-y-[-1px]"
             style={{
               background: '#ffffff',
               color: '#1f2421',
@@ -175,14 +177,14 @@ export default function Hero({ lenisRef }: HeroProps) {
               transform: 'translateY(15px)',
             }}
             onMouseEnter={(e) => {
-              (e.target as HTMLButtonElement).style.background = '#f0ece4';
+              (e.target as HTMLAnchorElement).style.background = '#f0ece4';
             }}
             onMouseLeave={(e) => {
-              (e.target as HTMLButtonElement).style.background = '#ffffff';
+              (e.target as HTMLAnchorElement).style.background = '#ffffff';
             }}
           >
             Zarezerwuj teraz
-          </button>
+          </a>
         </div>
       </div>
 

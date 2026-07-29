@@ -68,9 +68,11 @@ export default function Navigation({ lenisRef }: NavigationProps) {
                 {link.label}
               </button>
             ))}
-            <button
-              onClick={() => scrollTo('#kontakt')}
-              className="font-body text-[13px] font-medium tracking-[0.04em] transition-all duration-300 hover:translate-y-[-1px]"
+            <a
+              href="https://client24006.idobooking.com/book-now/index.php?ob[77]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-body text-[13px] font-medium tracking-[0.04em] transition-all duration-300 hover:translate-y-[-1px]"
               style={{
                 background: '#1f2421',
                 color: '#faf8f5',
@@ -79,7 +81,7 @@ export default function Navigation({ lenisRef }: NavigationProps) {
               }}
             >
               Zarezerwuj
-            </button>
+            </a>
           </div>
 
           {/* Mobile hamburger */}
@@ -143,9 +145,12 @@ export default function Navigation({ lenisRef }: NavigationProps) {
                 {link.label}
               </button>
             ))}
-            <button
-              onClick={() => scrollTo('#kontakt')}
-              className="mt-4 font-body text-[14px] font-medium tracking-[0.04em]"
+            <a
+              href="https://client24006.idobooking.com/book-now/index.php?ob[77]"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="mt-4 inline-block text-center font-body text-[14px] font-medium tracking-[0.04em]"
               style={{
                 background: '#1f2421',
                 color: '#faf8f5',
@@ -154,7 +159,7 @@ export default function Navigation({ lenisRef }: NavigationProps) {
               }}
             >
               Zarezerwuj
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -125,71 +125,39 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — Booking platforms */}
+          {/* Right — Direct IdoBooking Reservation */}
           <div
-            className="contact-animate opacity-0"
+            className="contact-animate opacity-0 flex flex-col justify-center rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
             style={{ transform: 'translateY(30px)' }}
           >
             <h3
-              className="mb-5 font-body text-[16px] font-medium"
-              style={{ color: '#c2a57f' }}
+              className="mb-3 font-display text-[24px] font-normal"
+              style={{ color: '#ffffff' }}
             >
-              Zarezerwuj przez
+              Rezerwacja online
             </h3>
 
             <p
-              className="mb-4 font-body text-[16px]"
-              style={{ color: 'rgba(255,255,255,0.88)' }}
+              className="mb-6 font-body text-[15px] leading-relaxed"
+              style={{ color: 'rgba(255,255,255,0.75)' }}
             >
-              Strona: easyrent szum i sosna
+              Sprawdź dostępne terminy i zarezerwuj swój pobyt w apartamencie Szumi Sosna bezpośrednio w systemie rezerwacji online.
             </p>
 
-            <div className="flex flex-col gap-3">
-              <button
-                className="w-full max-w-[220px] font-body text-[14px] font-medium transition-all duration-300"
-                style={{
-                  border: '1px solid rgba(255,255,255,0.3)',
-                  color: '#ffffff',
-                  padding: '12px 24px',
-                  borderRadius: 24,
-                  letterSpacing: '0.02em',
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = '#c2a57f';
-                  el.style.color = '#c2a57f';
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = 'rgba(255,255,255,0.3)';
-                  el.style.color = '#ffffff';
-                }}
-              >
-                Booking.com
-              </button>
-              <button
-                className="w-full max-w-[220px] font-body text-[14px] font-medium transition-all duration-300"
-                style={{
-                  border: '1px solid rgba(255,255,255,0.3)',
-                  color: '#ffffff',
-                  padding: '12px 24px',
-                  borderRadius: 24,
-                  letterSpacing: '0.02em',
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = '#c2a57f';
-                  el.style.color = '#c2a57f';
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = 'rgba(255,255,255,0.3)';
-                  el.style.color = '#ffffff';
-                }}
-              >
-                Airbnb
-              </button>
-            </div>
+            <a
+              href="https://client24006.idobooking.com/book-now/index.php?ob[77]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full font-body text-[15px] font-medium tracking-wide shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              style={{
+                background: '#c2a57f',
+                color: '#1f2421',
+                padding: '16px 36px',
+              }}
+            >
+              <Calendar size={18} />
+              Zarezerwuj termin online
+            </a>
           </div>
         </div>
 
