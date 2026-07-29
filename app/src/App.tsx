@@ -45,13 +45,17 @@ export default function App() {
 
   return (
     <div className="relative w-full max-w-full overflow-x-hidden">
-      <Navigation lenisRef={lenisRef} />
-      <Hero lenisRef={lenisRef} />
-      <About />
-      <Amenities />
-      <Gallery lenisRef={lenisRef} />
-      <Location />
-      <Contact />
+      <header>
+        <Navigation lenisRef={lenisRef} />
+      </header>
+      <main>
+        <Hero lenisRef={lenisRef} />
+        <About />
+        <Amenities />
+        <Gallery lenisRef={lenisRef} />
+        <Location />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
