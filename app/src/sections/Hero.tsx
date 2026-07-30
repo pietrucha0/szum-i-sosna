@@ -78,12 +78,6 @@ export default function Hero({ lenisRef }: HeroProps) {
     };
   }, []);
 
-  const scrollToContact = () => {
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo('#kontakt', { offset: -72 });
-    }
-  };
-
   return (
     <section
       id="hero"
