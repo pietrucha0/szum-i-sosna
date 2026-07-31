@@ -321,7 +321,7 @@ export default function Gallery({ lenisRef }: GalleryProps) {
                 transform: 'translateY(25px)',
               }}
             >
-              Odkryj Szumi Sosna
+              Odkryj Szum i Sosna
             </h2>
           </div>
 

@@ -91,7 +91,7 @@ export default function Contact() {
                 Kontakt bezpośredni
               </h3>
               <p className="font-body text-[14px] text-white/70 leading-relaxed mb-8">
-                Chętnie odpowiemy na Twoje pytania i pomożemy w zaplanowaniu idealnego pobytu w Szumi Sosna.
+                Chętnie odpowiemy na Twoje pytania i pomożemy w zaplanowaniu idealnego pobytu w Szum i Sosna.
               </p>
             </div>
 
