@@ -50,12 +50,12 @@ const galleryImages: GalleryImage[] = [
   // Łazienka
   { src: '/images/bathroom_sink_and_shower.jpeg', alt: 'Łazienka z umywalką nablatową i prysznicem walk-in', category: 'Łazienka' },
   { src: '/images/bathroom_toilet_and_shower.jpeg', alt: 'Nowoczesna łazienka z toaletą i prysznicem', category: 'Łazienka' },
-  { src: '/images/bathroom_toilet_and_vanity.jpeg', alt: 'Łazienka z dużym podświetlanym lustrem i szafką', category: 'Łazienka' },
+  { src: '/images/bathroom_toilet_and_vanity.jpeg', alt: 'Łazienka z dużym lustrem', category: 'Łazienka' },
 
   // Okolica
-  { src: '/images/building_exterior_and_forest.JPG', alt: 'Elewacja budynku zatopiona w sosnowym lesie', category: 'Okolica' },
-  { src: '/images/children_playground.jpeg', alt: 'Bezpieczny plac zabaw dla dzieci na terenie obiektu', category: 'Okolica' },
-  { src: '/images/aerial_view_of_complex.jpeg', alt: 'Widok z lotu ptaka na kompleks, basen i bliskość plaży', category: 'Okolica' },
+  { src: '/images/building_exterior_and_forest.JPG', alt: 'Budynek zatopiony w sosnowym lesie', category: 'Okolica' },
+  { src: '/images/children_playground.jpeg', alt: 'Bezpieczny plac zabaw dla dzieci na terenie obiektu i basen', category: 'Okolica' },
+  { src: '/images/aerial_view_of_complex.jpeg', alt: 'Widok z lotu ptaka na kompleks z basenem i leżakami', category: 'Okolica' },
 ];
 
 export default function Gallery({ lenisRef }: GalleryProps) {

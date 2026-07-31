@@ -1,19 +1,19 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Snowflake, Wifi, Car, Waves, TreePine, Coffee, Bath, Wind } from 'lucide-react';
+import { Snowflake, Wifi, Car, Waves, TreePine, Coffee, Bath, Sun } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const amenities = [
   { icon: Snowflake, title: 'Klimatyzacja', desc: 'Przyjemny chłód nawet w najgorętsze dni' },
   { icon: Wifi, title: 'Wi-Fi', desc: 'Szybkie łącze fibre w całym apartamencie' },
-  { icon: Car, title: 'Parking', desc: 'Darmowe miejsce parkingowe na terenie obiektu' },
-  { icon: Waves, title: 'Blisko plaży', desc: 'Zaledwie 100 metrów do morza' },
-  { icon: TreePine, title: 'Las sosnowy', desc: 'Widok na zielony las z okien' },
+  { icon: Car, title: 'Garaż podziemny', desc: 'Prywatne miejsce postojowe w garażu podziemnym' },
+  { icon: Waves, title: 'Blisko plaży', desc: 'Zaledwie 300 metrów do morza' },
+  { icon: Sun, title: 'Basen na osiedlu', desc: 'Basen czynny w sezonie (czerwiec – wrzesień)' },
+  { icon: TreePine, title: 'Las sosnowy, cisza i spokój', desc: 'Widok na zielony las z okien — oaza spokoju z dala od zgiełku' },
   { icon: Coffee, title: 'Duży taras', desc: 'Przestronny taras na poranną kawę' },
   { icon: Bath, title: 'Łazienka', desc: 'Nowoczesna łazienka z prysznicem' },
-  { icon: Wind, title: 'Cisza i spokój', desc: 'Oaza spokoju z dala od zgiełku' },
 ];
 
 export default function Amenities() {

@@ -153,7 +153,7 @@ export default function Hero({ lenisRef }: HeroProps) {
               transform: 'translateY(20px)',
             }}
           >
-            Nowoczesny apartament położony zaledwie 100 metrów od plaży to idealne miejsce na wypoczynek! Z okien rozpościera się widok na sosnowy las.
+            Nowoczesny apartament położony zaledwie 300 metrów od plaży to idealne miejsce na wypoczynek! Z okien rozpościera się widok na sosnowy las.
           </p>
 
           <a

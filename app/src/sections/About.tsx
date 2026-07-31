@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Leaf, Waves, Sun } from 'lucide-react';
+import { Leaf, Waves, Sun, Car } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,8 +56,9 @@ export default function About() {
 
   const features = [
     { icon: Leaf, text: 'Widok na sosnowy las' },
-    { icon: Waves, text: '100 metrów od plaży' },
-    { icon: Sun, text: 'Przestronny taras' },
+    { icon: Waves, text: '300 metrów od plaży' },
+    { icon: Sun, text: 'Przestronny taras & basen osiedlowy (w sezonie)' },
+    { icon: Car, text: 'Miejsce w garażu podziemnym' },
   ];
 
   return (
@@ -100,7 +101,7 @@ export default function About() {
               maxWidth: 480,
             }}
           >
-            Przestronny apartament zaprojektowany z myślą o komforcie i bliskości natury. Z okien rozpościera się widok na sosnowy las, a zaledwie 100 metrów dzieli Cię od plaży. Przestronny taras zachęca do spędzenia czasu przy porannej kawie lub wieczornego relaksu przy zachodzie słońca.
+            Przestronny apartament zaprojektowany z myślą o komforcie i bliskości natury. Z okien rozpościera się widok na sosnowy las, a zaledwie 300 metrów dzieli Cię od plaży. Przestronny taras zachęca do spędzenia czasu przy porannej kawie lub wieczornego relaksu przy zachodzie słońca.
           </p>
 
           <div className="mt-8 flex flex-col gap-4">

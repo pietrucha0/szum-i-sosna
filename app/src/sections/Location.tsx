@@ -5,9 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: '100m', label: 'do plaży' },
-  { value: '2 min', label: 'spacerem' },
-  { value: '5★', label: 'ocena gości' },
+  { value: '300m', label: 'do plaży' },
+  { value: '5 min', label: 'spacerem' },
+  { value: '4.9★', label: 'ocena gości' },
 ];
 
 export default function Location() {
